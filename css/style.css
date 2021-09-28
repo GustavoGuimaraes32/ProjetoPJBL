@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,100;1,400&display=swap');
+
+:root
+{
+    /* Paleta de cores */
+
+    --Cor-1: #1b90c2;
+    --Cor-2: #093142;
+    --Cor-3: rgb(160, 160, 160);
+    --Cor-4: #e1e6e7;
+    --Cor-5: #5AAACC;
+    --Cor-6: #1D3742;
+    --Cor-7: #146A8F;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/Background-login-screen.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content
+{
+    background-color: white;
+    border-radius: 15px;
+    width: 960px;
+    height: 75%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content::before
+{
+    content: "";
+    position: absolute;
+    background-color: var(--Cor-1);
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-radius: 15px 0 0 15px;
+}
+
+.title
+{
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.title-primary
+{
+    color: white;
+}
+
+.title-second
+{
+    color: var(--Cor-1);
+}
+
+.description
+{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.description-primary
+{
+    color: white;
+}
+
+.description-second
+{
+    color: var(--Cor-3);
+}
+
+.btn
+{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10px;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
+    transition: 0.5s;
+    margin-top: 1rem;
+}
+
+.btn-primary
+{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.btn-primary:hover
+{
+    background-color: white;
+    color: var(--Cor-1);
+}
+
+.btn-second
+{
+    background-color: var(--Cor-1);
+    border: 1px solid var(--Cor-1);
+}
+
+.btn-second:hover
+{
+    background-color: white;
+    color: var(--Cor-1);
+}
+
+.first-content
+{
+    display: flex;
+}
+
+.first-content .second-column
+{
+    z-index: 11;
+}
+
+.first-column
+{
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+
+.second-column
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media
+{
+    margin: 1rem 0;
+}
+
+.list-social-media
+{
+    display: flex;
+    list-style-type: none;
+}
+
+.item-social-media
+{
+    border: 1px solid var(--Cor-3);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: var(--Cor-3);
+    transition: 0.5s;
+}
+
+.link-social-media:not(:first-child)
+{
+    margin-left: 10px;
+}
+
+.link-social-media:hover .item-social-media
+{
+    background-color: var(--Cor-1);
+    border: 1px solid var(--Cor-1);
+    color: white;
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.form input
+{
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: var(--Cor-4);
+    border-radius: 15px;
+    color: var(--Cor-1);
+    outline: none;
+}
+
+.label-input
+{
+    background-color: var(--Cor-4);
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    border-radius: 15px;
+}
+
+.label-input:focus-within
+{
+    border: 2px solid var(--Cor-1);
+}
+
+.icon-login
+{
+    color: var(--Cor-3);
+    padding: 10px;
+}
+
+/* -~-~-~-~-~-~-~-~-~-~ Configuração da Tela de cadastro -~-~-~-~-~-~-~-~-~-~ */
+
+.sign-up-content
+{
+    background-color: white;
+    border-radius: 15px;
+    width: 960px;
+    height: 90%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.sign-up-content::before
+{
+    content: "";
+    position: absolute;
+    background-color: var(--Cor-1);
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-radius: 15px 0 0 15px;
+}
+
+.second-content
+{
+    position: absolute;
+    display: flex;
+}
+
+.forgot-password
+{
+    color: var(--Cor-1);
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.forgot-password:hover
+{
+    color: var(--Cor-2);
+}
+
+.form .sign-up-input
+{
+    height: 32px;
+    width: 100%;
+    border: none;
+    background-color: var(--Cor-4);
+}
+
+/* -~-~-~-~-~-~-~-~-~-~ Responsive -~-~-~-~-~-~-~-~-~-~ */
+
+@media screen and (max-width: 1040px)
+{
+    /* Index */
+
+    .content
+    {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .content::before
+    {
+        width: 100%;
+        height: 40%;
+        top: 0;
+        border-radius: 0;
+    }
+
+    .content .first-column
+    {
+        position: relative;
+        top: 15px;
+    }
+
+    .content .second-column
+    {
+        position: relative;
+        top: 40px;
+    }
+
+    .first-content
+    {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .form button
+    {
+        margin-bottom: 30px;
+    }
+
+    /* Cadastro */
+
+    .sign-up-content
+    {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .sign-up-content::before
+    {
+        width: 100%;
+        height: 40%;
+        top: 0;
+        border-radius: 0;
+    }
+
+    .sign-up-content .first-column
+    {
+        position: relative;
+        top: 80px;
+    }
+
+    .sign-up-content .first-column h2
+    {
+        font-size: 22px;
+    }
+
+    .sign-up-content .second-column
+    {
+        position: relative;
+        top: 80px;
+    }
+
+    .second-content
+    {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
