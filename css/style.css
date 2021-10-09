@@ -340,7 +340,7 @@ nav
 }
 
 .side-bar .menu .item a {
-    color: white;
+    color: var(--Cor-5);
     font-size: 16px;
     text-decoration: none;
     display: block;
@@ -349,6 +349,7 @@ nav
 }
 
 .side-bar .menu .item a:hover {
+    color: #fff;
     background: var(--Cor-1);
     transition: 0.5s ease;
 }
@@ -674,6 +675,46 @@ body > section > main > div > div.home-third-content > div:nth-child(7)
 .footer-col .socials-links a:hover
 {
     background-color: var(--Cor-1);
+}
+
+/* -~-~-~-~-~-~-~-~-~-~ PÁGINA DE ANIMAIS E ÁRVORES -~-~-~-~-~-~-~-~-~-~ */
+
+.return-icon
+{
+    margin: 20px;
+    font-size: 30px;
+    display: flex;
+    color: var(--Cor-2);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.return-icon:hover
+{
+    left: 5px;
+}
+
+.animal-title
+{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.animal-title .hr
+{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 320px;
+}
+
+.animal-title p
+{
+    max-width: 700px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 100px;
 }
 
 /* -~-~-~-~-~-~-~-~-~-~ Responsive -~-~-~-~-~-~-~-~-~-~ */
