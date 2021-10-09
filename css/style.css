@@ -422,6 +422,11 @@ nav
     margin: 15px 0px 20px 0px;
 }
 
+body > section > main > div > div:nth-child(1) > div > div
+{
+    margin-top: 100px;
+}
+
 .row
 {
     justify-content: center;
@@ -441,6 +446,54 @@ nav
     border-radius: 20px 0px;
 }
 
+body > section > main > div > div.home-second-content > h1:nth-child(1)
+{
+    margin-top: 150px;
+}
+
+.home-second-content
+{
+    text-align: center;
+}
+
+.home-second-content h1
+{
+    margin: 50px 0px 0px 0px;
+}
+
+.home-second-content .hr
+{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.home-second-content p
+{
+    max-width: 700px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.home-btn
+{
+    border: 1px solid var(--Cor-1);
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #fff !important;
+    color: var(--Cor-1);
+    font-weight: 600;
+    margin: 0 0 40px 0;
+    transition: 0.5s;
+}
+
+.home-btn:hover
+{
+    background-color: var(--Cor-1) !important;
+    color: white;
+}
+
 /* ~-~-~-~-~- HOME SLIDE ~-~-~-~-~- */
 
 .carousel-item img
@@ -449,6 +502,178 @@ nav
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+/* ~-~-~-~-~-  THIRD-CONTENT / CARDS PRESERVAÇÃO DA NATUREZA ~-~-~-~-~- */
+
+.home-third-content
+{
+    margin-top: 50px;
+}
+
+.home-third-content h1
+{
+    text-align: center;
+}
+
+.home-third-content .hr
+{
+    width: 850px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.environment-cards-content
+{
+    position: relative;
+    left: 50%;
+    transform: translate(-40%);
+    max-width: 1100px;
+}
+
+.environment-cards
+{
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    border-radius: 20px;
+    color: #1D3742;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px 0px 40px 0px;
+    display: inline-block;
+}
+
+body > section > main > div > div.home-third-content > div:nth-child(4)
+{
+    margin: 0px 30px;
+}
+
+body > section > main > div > div.home-third-content > div:nth-child(7)
+{
+    margin: 0px 30px;
+}
+
+.environment-cards i
+{
+    font-size: 130px;
+    margin-top: 30px;
+}
+
+.environment-cards h3
+{
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 250px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.environment-cards p
+{
+    max-width: 250px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: 300;
+}
+
+/* -~-~-~-~-~-~-~-~-~-~ Footer -~-~-~-~-~-~-~-~-~-~ */
+
+.footer
+{
+    background-color: var(--Cor-2);
+    padding: 70px 0px;
+    line-height: 1.5;
+}
+
+.footer-container
+{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer-row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col
+{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4
+{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 400;
+    position: relative;
+}
+
+.footer-col h4::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--Cor-1);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul
+{
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-col ul li:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a
+{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover
+{
+    color: #fff;
+    padding-left: 8px;
+}
+
+.footer-col .socials-links a
+{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--Cor-5);
+    margin: 0px 10px 10px 0px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .socials-links a:hover
+{
+    background-color: var(--Cor-1);
 }
 
 /* -~-~-~-~-~-~-~-~-~-~ Responsive -~-~-~-~-~-~-~-~-~-~ */
@@ -563,6 +788,14 @@ nav
     }
 }
 
+@media (max-width: 710px)
+{
+    .home-third-content .hr 
+    {
+        width: 350px !important;
+    }
+}
+
 @media (max-width: 1199px)
 {
     .col-lg-6 img 
@@ -601,5 +834,143 @@ nav
         position: relative;
         left: 50%;
         transform: translate(-50%);
+    }
+
+    .home-second-content
+    {
+        text-align: center;
+    }
+
+    .home-second-content .hr
+    {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .home-third-content .hr
+    {
+        width: 600px;
+    }
+
+}
+
+@media (max-width: 1200px)
+{
+    .environment-cards-content
+    {
+        transform: translate(-46%);
+    }
+}
+
+@media (max-width: 768px)
+{
+    .environment-cards
+    {
+        width: 250px;
+        height: 330px;
+    }
+}
+
+@media (max-width: 550px)
+{
+    .environment-cards
+    {
+        width: 210px;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .col-lg-6 img
+    {
+        width: 300px;
+        height: 175px;
+    }
+
+    .order-lg-1 .hr
+    {
+        width: 300px;
+    }
+
+    .home-second-content .hr
+    {
+        width: 300px;
+    }
+
+    .home-third-content .hr
+    {
+        width: 300px !important;
+    }
+
+    .environment-cards-content
+    {
+        transform: translate(-48%);
+    }
+
+    .environment-cards
+    {
+        width: 160px;
+    }
+
+    .environment-cards i
+    {
+        font-size: 104px;
+    }
+
+    body > section > main > div > div.home-third-content > div.environment-cards-content > div:nth-child(2) > h3
+    {
+        margin-top: 40px;
+        position: relative;
+        bottom: 21px;
+    }
+
+    body > section > main > div > div.home-third-content > div.environment-cards-content > div:nth-child(2) > p
+    {
+        position: relative;
+        bottom: 22px;
+    }
+
+    body > section > main > div > div.home-third-content > div.environment-cards-content > div:nth-child(6) > i
+    {
+        position: relative;
+        bottom: 20px;
+    }
+
+    body > section > main > div > div.home-third-content > div.environment-cards-content > div:nth-child(6) > h3
+    {
+        position: relative;
+        bottom: 19px;
+    }
+
+    body > section > main > div > div.home-third-content > div.environment-cards-content > div:nth-child(6) > p
+    {
+        position: relative;
+        bottom: 2px;
+    }
+}
+
+@media (max-width: 320px)
+{
+    .environment-cards 
+    {
+        width: 140px;
+    }
+}
+
+@media (max-width: 767px)
+{
+    .footer-col
+    {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 483px)
+{
+    .footer-col .socials-links
+    {
+        max-width: 150px;
     }
 }
