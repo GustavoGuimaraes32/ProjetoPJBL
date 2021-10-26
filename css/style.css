@@ -932,6 +932,78 @@ body > section > main > div > div.home-third-content > div:nth-child(7)
     transform: translate(-50%);
     margin-bottom: 100px;
 }
+/* -~-~-~-~-~-~-~-~-~-~ Pagina de Fotos -~-~-~-~-~-~-~-~-~-~ */
+
+.wg1{
+    grid-column: span 1;
+}
+.wg2{
+    grid-column: span 2;
+}
+.hg1{
+    grid-row: span 1;
+}
+.hg2{
+    grid-row: span 2;
+}
+
+div.galeria{
+    width: 90%;
+    height: 90vh;
+    margin-top:100px;
+    margin-bottom: 100vh;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 45vh;
+}
+
+div.single-galeria{
+    margin: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+div.img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+div.img img{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+div.overflow{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(transparent, rgba(22, 22, 22, 0.671));
+    opacity: 0,8;
+}
+
+div.conteudo{
+    position: absolute;
+    color: white;
+    border-left: 3px solid white;
+    padding: 0 10px;
+    bottom: 10px;
+    left: 10px;
+
+}
+
+div.conteudo h1{
+    font-size: 22px;
+}
 
 /* -~-~-~-~-~-~-~-~-~-~ Responsive -~-~-~-~-~-~-~-~-~-~ */
 
@@ -1201,5 +1273,24 @@ body > section > main > div > div.home-third-content > div:nth-child(7)
     {
         width: 100%;
         margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 764px){
+    .wg1{
+        grid-column: span 2;
+    }
+    .hg1{
+        grid-row: span 2;
+    }
+    
+    div.galeria{
+    
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: calc(45vh / 2);
+    }
+
+    div.conteudo h1{
+        font-size: 14px;
     }
 }
