@@ -618,6 +618,7 @@ body > section > main > div > div.home-third-content > div:nth-child(7)
     justify-content: center;
     position: relative;
     font-family: 'Poppins',sans-serif;
+    z-index: 9;
 }
 
 .contato::before
@@ -795,6 +796,63 @@ body > section > main > div > div.home-third-content > div:nth-child(7)
 .contato-content .input-box input[type="submit"]:hover
 {
     background-color: #13668a;
+}
+
+/* -~-~-~-~-~-~-~-~-~-~ POP-UP PÁGINA CONTATO -~-~-~-~-~-~-~-~-~-~ */
+
+.popup-content
+{
+    background-color: white;
+    border: 1px solid #72AF3B;
+    border-radius: 30px;
+    padding: 20px;
+    width: 300px;
+    height: 340px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -30%);
+    z-index: 10;
+}
+
+.popup-img img
+{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 150px;
+    margin-top: 10px;
+}
+
+.popup-p p
+{
+    color: black;
+    text-align: center;
+    margin-top: 9px;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.popup-button button
+{
+    border: none;
+    background: #72AF3B;
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 17px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.popup-button button:hover
+{
+    width: 155px;
+    height: 45px;
+    background: #82c04d;
 }
 
 /* -~-~-~-~-~-~-~-~-~-~ Footer -~-~-~-~-~-~-~-~-~-~ */
