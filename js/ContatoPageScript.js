@@ -84,7 +84,13 @@ function formulario()
         alert("A mensagem deve possuir no mínimo 10 caracteres");
     }
 
-    if(nome.length >= 8 && email.indexOf("@") != '-1' && assunto.length >= 5 && mensagem.length >= 10)
+    if(mensagem.length > 320)
+    {
+        mensagemCont.style.border = "2px solid #FFA300";
+        alert("A mensagem deve possuir no máximo 320 caracteres");
+    }
+
+    if(nome.length >= 8 && email.indexOf("@") != '-1' && assunto.length >= 5 && mensagem.length >= 10 && mensagem.length < 320)
     {
         form.push(nome);
         form.push(email);
