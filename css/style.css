@@ -611,7 +611,7 @@ body > section > main > div > div.home-third-content > div:nth-child(7)
 
 .contato
 {
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     align-items: center;
@@ -796,6 +796,58 @@ body > section > main > div > div.home-third-content > div:nth-child(7)
 .contato-content .input-box input[type="submit"]:hover
 {
     background-color: #13668a;
+}
+
+.form-card-title
+{
+    margin: 100px 0px 50px 0px;
+    text-align: center;
+    color: var(--Cor-2);
+}
+
+.form-card-content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.form-card
+{
+    background: var(--Cor-4);
+    width: 500px;
+    height: 480px;
+    margin: 20px;
+    box-shadow: 11px 8px 0px #79c9db;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-card h4
+{
+    font-size: 18px;
+}
+
+.form-card hr
+{
+    color: var(--Cor-1);
+}
+
+.empty-form
+{
+    text-align: center;
+    color: var(--Cor-2);
+}
+
+.empty-form i
+{
+    color: var(--Cor-2);
+    margin-top: 30px;
+    font-size: 80px;
+    margin-bottom: 40px;
 }
 
 /* -~-~-~-~-~-~-~-~-~-~ POP-UP PÁGINA CONTATO -~-~-~-~-~-~-~-~-~-~ */

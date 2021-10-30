@@ -30,6 +30,7 @@ $(document).ready(function(){
         listaForm = [];
     }
 
+    printFormCard();
 });
 
 /*window.onload = function()
@@ -46,13 +47,44 @@ $(document).ready(function(){
 
 function formulario()
 {
-    form = [];
-    var nome = document.getElementById("nomeCont").value;
-    var email = document.getElementById("emailCont").value;
-    var assunto = document.getElementById("assuntoCont").value;
-    var mensagem = document.getElementById("mensagemCont").value;
 
-    if(nome != "" && email != "" && assunto != "" && mensagem != "")
+    var nome = document.getElementById("nomeCont").value;
+    var nomeCont = document.getElementById("nomeCont");
+
+    var email = document.getElementById("emailCont").value;
+    var emailCont = document.getElementById("emailCont");
+
+    var assunto = document.getElementById("assuntoCont").value;
+    var assuntoCont = document.getElementById("assuntoCont");
+
+    var mensagem = document.getElementById("mensagemCont").value;
+    var mensagemCont = document.getElementById("mensagemCont");
+    
+    if(nome.length < 8 || nome == "")
+    {
+        nomeCont.style.border = "2px solid #FFA300";
+        alert("O Nome Completo deve ter no mínimo 8 caracteres");
+    }
+
+    if(email.indexOf("@") == -1)
+    {
+        emailCont.style.border = "2px solid #FFA300";
+        alert('Deve possuir "@" para validar o e-mail')
+    }
+
+    if(assunto.length < 5 || assunto == "")
+    {
+        assuntoCont.style.border = "2px solid #FFA300";
+        alert("O assunto deve possuir no mínimo 5 caracteres");
+    }
+    
+    if(mensagem.length < 10 || mensagem == "")
+    {
+        mensagemCont.style.border = "2px solid #FFA300";
+        alert("A mensagem deve possuir no mínimo 10 caracteres");
+    }
+
+    if(nome.length >= 8 && email.indexOf("@") != '-1' && assunto.length >= 5 && mensagem.length >= 10)
     {
         form.push(nome);
         form.push(email);
@@ -89,4 +121,44 @@ function successPopUp()
     conteudo += '</div>';
 
     document.getElementById("popup-check").innerHTML += conteudo;
+}
+
+function printFormCard()
+{
+
+    if(listaForm.length < 1)
+    {
+        emptyForm = "";
+
+        emptyForm += '<div class="empty-form">';
+        emptyForm += '<i class="fas fa-exclamation"></i>';
+        emptyForm += '<h3>Você ainda não preencheu nenhum formulário!</h3>';
+        emptyForm += '</div>';
+
+        document.getElementById("form-card").innerHTML += emptyForm;
+    }
+
+    if(listaForm != null)
+    {
+        for(var i = 0; i < listaForm.length; i++)
+        {
+            var conteudoForm = "";
+
+            conteudoForm += '<div class="form-card">';
+            conteudoForm += '<h4>Nome Completo</h4>';
+            conteudoForm += '<p>'+ listaForm[i][0] +'</p>';
+            conteudoForm += '<hr>';
+            conteudoForm += '<h4>Email</h4>';
+            conteudoForm += '<p>'+ listaForm[i][1] +'</p>';
+            conteudoForm += '<hr>';
+            conteudoForm += '<h4>Assunto</h4>';
+            conteudoForm += '<p>'+ listaForm[i][2] +'</p>';
+            conteudoForm += '<hr>';
+            conteudoForm += '<h4>Mensagem</h4>';
+            conteudoForm += '<p>'+ listaForm[i][3] +'</p>';
+            conteudoForm += '</div>';
+
+            document.getElementById("form-card").innerHTML += conteudoForm;
+        }
+    }
 }
