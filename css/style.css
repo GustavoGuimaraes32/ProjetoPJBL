@@ -416,6 +416,131 @@ nav
     cursor: pointer;
 }
 
+/* ~-~-~-~-~- PÁGINA PASSEIOS/HOSPEDAGENS ~-~-~-~-~- */
+
+.return-icon
+{
+    margin: 20px;
+    font-size: 30px;
+    display: flex;
+    color: var(--Cor-2);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.return-icon:hover
+{
+    left: 5px;
+}
+
+.filtro
+{
+    text-align: center;
+}
+
+.filtro h3
+{
+    margin: 30px;
+}
+
+.filtro ul
+{
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 0;
+}
+
+.filtro ul a
+{
+    text-decoration: none;
+}
+
+.filtro ul a li
+{
+    margin: 10px 20px;
+    border: 1px solid var(--Cor-1);
+    padding: 4px 12px;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+}
+
+.filtro ul a li:hover
+{
+    color: white;
+    background-color: var(--Cor-1);
+}
+
+.pas-hos-body
+{
+   background: #F4F5FA;
+}
+
+.flex-box
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.card-pas-hos
+{
+   text-align: center;
+   background: #FFF;
+   width: 370px;
+   margin: 20px;
+   box-shadow: 0px 0px 20px rgba(0,0,0,0.05);
+   box-sizing: border-box;
+   padding: 20px;
+   border-radius: 5px;
+}
+
+.card-pas-hos .title
+{
+    margin-top: 10px;
+}
+
+.card-pas-hos p
+{
+    margin: 10px;
+}
+
+.card-pas-hos .img img
+{
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   height: 200px;
+   width: 100%;
+   border-radius: 5px;
+   background-size: cover;
+}
+
+.card-pas-hos a
+{
+   padding: 10px;
+   width: 100%;
+   display: block;
+   text-align: center;
+   border: 1px solid var(--Cor-1);
+   box-sizing: border-box;
+   border-radius: 4px;
+   color: var(--Cor-1);
+   text-decoration: none;
+   font-size: 15px;
+   transition: all 0.5s ease;
+}
+
+.card-pas-hos a:hover
+{
+    background-color: var(--Cor-1);
+    color: #fff;
+}
+
 /* ~-~-~-~-~- HOME CONTENT ~-~-~-~-~- */
 
 .bar
