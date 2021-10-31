@@ -307,6 +307,14 @@ body::-webkit-scrollbar-thumb
     background-color: var(--Cor-4);
 }
 
+#sucess-login-cadastro p
+{
+    margin: 0;
+    text-align: center;
+    color: var(--Cor-1);
+    font-weight: 800;
+}
+
 /* -~-~-~-~-~-~-~-~-~-~ TELA LOGIN/CADASTRO -~-~-~-~-~-~-~-~-~-~ */
 
 /* ~-~-~-~-~- NAVBAR ~-~-~-~-~- */
@@ -1320,13 +1328,26 @@ body > section > main > div > div.home-third-content > div:nth-child(7)
     .sign-up-content .second-column
     {
         position: relative;
-        top: 80px;
+        top: 190px;
     }
 
     .second-content
     {
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    .sign-up-content::before
+    {
+        height: 50%;
+    }
+}
+
+@media (max-width: 485px)
+{
+    .sign-up-content::before
+    {
+        height: 50%;
     }
 }
 

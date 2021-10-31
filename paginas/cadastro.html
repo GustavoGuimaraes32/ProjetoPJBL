@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="https://kit.fontawesome.com/93d18202e7.js" crossorigin="anonymous"></script>
+    <script src="../js/login-cadastro.js"></script>
 </head>
 <body>
     <div class="login-container">
@@ -42,36 +43,34 @@
                     </ul>
                 </div>
                 <form class="form">
-                    <label class="label-input" for="">
+                    <label class="label-input" for="" id="labelNome">
                         <i class="fas fa-user icon-login"></i>
-                        <input class="sign-up-input" type="text" placeholder="Nome">
+                        <input class="sign-up-input" type="text" placeholder="Nome" id="nome" >
                     </label>
 
-                    <label class="label-input" for="">
+                    <label class="label-input" for="" id="labelSobrenome">
                         <i class="fas fa-user icon-login"></i>
-                        <input class="sign-up-input" type="text" placeholder="Sobrenome">
+                        <input class="sign-up-input" type="text" placeholder="Sobrenome" id="sobrenome" >
                     </label>
 
-                    <label class="label-input" for="">
+                    <label class="label-input" for="" id="labelEmail">
                         <i class="fas fa-envelope icon-login"></i>
-                        <input class="sign-up-input" type="email" placeholder="Email">
-                    </label>
-
-                    <label class="label-input" for="">
-                        <i class="fas fa-user icon-login"></i>
-                        <input class="sign-up-input" type="text" placeholder="Nome de Usuário">
+                        <input class="sign-up-input" type="email" placeholder="Email" id="email" >
                     </label>
                     
-                    <label class="label-input" for="">
+                    <label class="label-input" for="" id="labelSenha">
                         <i class="fas fa-lock icon-login"></i>
-                        <input class="sign-up-input" type="password" placeholder="Senha">
+                        <input class="sign-up-input" type="password" placeholder="Senha" id="senha" >
                     </label>
 
-                    <label class="label-input" for="">
+                    <label class="label-input" for="" id="labelConfirmSenha">
                         <i class="fas fa-lock icon-login"></i>
-                        <input class="sign-up-input" type="password" placeholder="Confirmar Senha">
+                        <input class="sign-up-input" type="password" placeholder="Confirmar Senha" id="confirmSenha" >
                     </label>
-                    <a href="login.html" style="text-align: center;"><button class="btn btn-second">Cadastre-se</button></a>
+                    <div id="sucess-login-cadastro">
+
+                    </div>
+                    <button class="btn btn-second" onclick="cadastro()">Cadastre-se</button>
                 </form>
             </div> 
         </div>
