@@ -77,18 +77,25 @@ function Login()
         var nomeLogin = document.getElementById("nomeLogin").value;
         var senhaLogin = document.getElementById("senhaLogin").value;
 
+        if(nomeLogin == "" || senhaLogin == "")
+        {
+            alert("É necessário o preenchimentos dos campos nome e senha para realizar o login")
+            return false;
+        }
         if(nomeLogin != listaUsuario[i][0])
         {
             alert("Nome de Usuário inválido!");
         }
-        if(senhaLogin == listaUsuario[i][3])
+        if(senhaLogin != listaUsuario[i][3])
         {
             alert("Senha inválida!");
         }
         if(nomeLogin == listaUsuario[i][0] && senhaLogin == listaUsuario[i][3])
         {
-            alert("Login realizado com sucesso!");
-            window.location.href = "../index.html";
+            setTimeout(function redirecionar()
+            {
+                window.location.href = "../index.html";
+            });
         }
     }
 }
