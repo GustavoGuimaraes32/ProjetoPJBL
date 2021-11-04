@@ -72,30 +72,32 @@ function cadastro()
 
 function Login()
 {
+    var nomeLogin = document.getElementById("nomeLogin").value;
+    var senhaLogin = document.getElementById("senhaLogin").value;
+
     for(var i = 0; i < listaUsuario.length; i++)
     {
-        var nomeLogin = document.getElementById("nomeLogin").value;
-        var senhaLogin = document.getElementById("senhaLogin").value;
-
-        if(nomeLogin == "" || senhaLogin == "")
-        {
-            alert("É necessário o preenchimentos dos campos nome e senha para realizar o login")
-            return false;
-        }
-        if(nomeLogin != listaUsuario[i][0])
-        {
-            alert("Nome de Usuário inválido!");
-        }
-        if(senhaLogin != listaUsuario[i][3])
-        {
-            alert("Senha inválida!");
-        }
         if(nomeLogin == listaUsuario[i][0] && senhaLogin == listaUsuario[i][3])
         {
             setTimeout(function redirecionar()
             {
                 window.location.href = "../index.html";
             });
+            return true;
+        }
+    }
+
+    for(var i = 0; i < listaUsuario.length; i++)
+    {
+        if(nomeLogin == "" || senhaLogin == "")
+        {
+            alert("É necessário o preenchimentos dos campos nome e senha para realizar o login")
+            return false;
+        }
+        if(nomeLogin != listaUsuario[i][0] || senhaLogin != listaUsuario[i][3])
+        {
+            alert("Nome de Usuário ou senha inválido(a)!");
+            return false;
         }
     }
 }
