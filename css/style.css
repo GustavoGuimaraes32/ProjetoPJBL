@@ -1253,6 +1253,158 @@ body > section > main > div > div.home-third-content > div:nth-child(7)
     margin-bottom: 100px;
 }
 
+/* ~-~-~-~-~-  PÁGINAS DE VENDAS PASSEIOS E HOSPEDAGENS ~-~-~-~-~- */
+
+.pas-hos-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pas-hos-firstContent
+{
+    display: flex;
+    margin-top: 60px;
+}
+
+.slide-pas-hos
+{
+    width: 500px;
+}
+
+.slide-pas-hos img
+{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.second-slide-pas-hos
+{
+    display: none;
+}
+
+.pas-hos-information
+{
+    max-width: 600px;
+    padding-left: 50px;
+}
+
+.pas-hos-information button
+{
+    margin-top: 40px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background: var(--Cor-1);
+    transition: all 0.5s ease;
+}
+
+.pas-hos-information button:hover
+{
+    background-color: #76bfdf;
+}
+
+.pas-hos-second-content
+{
+    max-width: 1400px;
+    margin-top: 50px;
+}
+
+.pas-hos-description
+{
+    max-width: 1100px;
+}
+
+.include-title
+{
+    margin-top: 50px;
+}
+
+.include-pas-hos
+{
+    max-width: 1100px;
+    margin-top: 35px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.include-item
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.include-item i
+{
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.include-pas-hos p
+{
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.pas-hos-second-content-flex
+{
+    display: flex;
+}
+
+.include-flex
+{
+    max-width: 750px;
+}
+
+.pas-hos-map
+{
+    margin-top: 120px;
+}
+
+.pas-hos-message-box
+{
+    margin-top: 30px;
+}
+
+.pas-hos-message-box textarea
+{
+    width: 1100px;
+    height: 150px;
+    border: 2px solid #CCC;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+.pas-hos-message-box textarea:focus
+{
+    border: 2px solid var(--Cor-1);
+}
+
+.pas-hos-button button
+{
+    width: 100px;
+    height: 35px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    border: none;
+    background: var(--Cor-1);
+    transition: all 0.5s ease;
+}
+
+.pas-hos-button button:hover
+{
+    background-color: #76bfdf;
+}
+
 /* -~-~-~-~-~-~-~-~-~-~ Responsive -~-~-~-~-~-~-~-~-~-~ */
 
 @media screen and (max-width: 1040px)
@@ -1553,5 +1705,60 @@ body > section > main > div > div.home-third-content > div:nth-child(7)
 
     div.conteudo h1{
         font-size: 14px;
+    }
+}
+
+@media (max-width: 1185px)
+{
+    .pas-hos-second-content
+    {
+        width: 100%;
+        padding: 0px 30px;
+    }
+
+    .pas-hos-second-content-flex
+    {
+        display: block;
+    }
+
+    .include-flex
+    {
+        max-width: 1100px;
+    }
+
+    .pas-hos-map
+    {
+        margin-top: 30px;
+    }
+
+    .pas-hos-map iframe
+    {
+        width: 100%;
+    }
+
+    .pas-hos-message-box textarea
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1130px)
+{
+    .slide-pas-hos
+    {
+        display: none;
+    }
+
+    .pas-hos-information
+    {
+        max-width: 1100px;
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .second-slide-pas-hos
+    {
+        display: block;
+        margin-bottom: 30px;
     }
 }
