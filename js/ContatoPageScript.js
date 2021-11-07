@@ -161,7 +161,7 @@ function printFormCard()
             conteudoForm += '<p>'+ listaForm[i][2] +'</p>';
             conteudoForm += '<hr>';
             conteudoForm += '<h4>Mensagem</h4>';
-            conteudoForm += '<p>'+ listaForm[i][3] +'</p>';
+            conteudoForm += '<p class="form-message">'+ listaForm[i][3] +'</p>';
             conteudoForm += '</div>';
 
             document.getElementById("form-card").innerHTML += conteudoForm;
